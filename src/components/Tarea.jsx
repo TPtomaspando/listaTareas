@@ -1,35 +1,16 @@
 import React from "react";
-import Table from "react-bootstrap/Table";
-import Button from "react-bootstrap/Button";
+import { Button, ListGroup } from "react-bootstrap";
+import { XCircle } from "react-bootstrap-icons";
 
 const Tarea = () => {
   return (
     <>
-      <section>
-        <Table borderless>
-          <tbody>
-            <tr>
-              <td>Planificar</td>
-              <td>
-                <Button variant="danger">X</Button>
-              </td>
-            </tr>
-            <tr>
-              <td>Maquetar</td>
-
-              <td>
-                <Button variant="danger">X</Button>
-              </td>
-            </tr>
-            <tr>
-              <td>Codear</td>
-              <td>
-                <Button variant="danger">X</Button>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
-      </section>
+      <ListGroup.Item className="d-flex justify-content-between">
+        Planificar
+        <Button variant="danger">
+          <XCircle></XCircle>
+        </Button>
+      </ListGroup.Item>
     </>
   );
 };

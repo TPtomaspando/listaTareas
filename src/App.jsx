@@ -1,15 +1,16 @@
 import FormularioTarea from "./components/FormularioTarea";
-import Tarea from "./components/Tarea";
+import ListadeTareas from "./components/ListadeTareas";
 import Footer from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/icons/plus-circle.svg";
-
+import "./App.css";
 function App() {
   return (
     <>
-      <h1 className="display-4 text-center">Lista de Tareas</h1>
-      <FormularioTarea />
-      <Tarea />
+      <main>
+        <h1 className="display-4 text-center">Lista de Tareas</h1>
+        <FormularioTarea />
+        <ListadeTareas />
+      </main>
       <Footer />
     </>
   );
