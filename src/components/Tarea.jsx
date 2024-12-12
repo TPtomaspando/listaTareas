@@ -2,11 +2,11 @@ import React from "react";
 import { Button, ListGroup } from "react-bootstrap";
 import { XCircle } from "react-bootstrap-icons";
 
-const Tarea = () => {
+const Tarea = ({ tarea }) => {
   return (
     <>
       <ListGroup.Item className="d-flex justify-content-between">
-        Planificar
+        {tarea}
         <Button variant="danger">
           <XCircle></XCircle>
         </Button>

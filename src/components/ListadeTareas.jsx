@@ -2,14 +2,14 @@ import React from "react";
 import { ListGroup } from "react-bootstrap";
 import Tarea from "./Tarea";
 
-const ListadeTareas = () => {
+const ListadeTareas = ({ listaTareas }) => {
   return (
     <>
       <section className="container mt-4">
         <ListGroup>
-          <Tarea></Tarea>
-          <Tarea></Tarea>
-          <Tarea></Tarea>
+          {listaTareas.map((tarea) => (
+            <Tarea key={tarea} tarea={tarea}></Tarea>
+          ))}
         </ListGroup>
       </section>
     </>
