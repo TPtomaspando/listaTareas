@@ -28,6 +28,12 @@ const FormularioTarea = () => {
     }
   };
 
+  const borrarTarea = (nombreTarea) => {
+    //splice
+    const tareasFiltradas = listaTareas.filter((tarea) => tarea != nombreTarea);
+    setListaTareas[tareasFiltradas];
+  };
+
   return (
     <>
       <section className="mb-4">
